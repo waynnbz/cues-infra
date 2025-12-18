@@ -1,0 +1,42 @@
+# -----------------------------
+# Supabase local development
+# -----------------------------
+
+# Local database data
+.supabase/
+
+# Supabase CLI state
+.supabase/anon.key
+.supabase/service_role.key
+
+# Local environment overrides
+.env
+.env.*
+!.env.example
+
+# -----------------------------
+# Generated / derived artifacts
+# -----------------------------
+
+# Generated types (if using supabase gen types)
+types/
+database.types.ts
+
+# SQL dumps / backups
+*.dump
+*.sql.bak
+
+# -----------------------------
+# Logs & temp files
+# -----------------------------
+*.log
+tmp/
+.temp/
+.branches/
+
+# -----------------------------
+# OS / editor noise
+# -----------------------------
+.DS_Store
+.idea/
+.vscode/
