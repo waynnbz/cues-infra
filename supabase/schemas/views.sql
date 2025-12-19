@@ -30,3 +30,5 @@ from cues c
 left join actions a on a.cue_id = c.id
 left join deterministic_actions da on da.action_id = a.id
 group by c.id;
+
+alter view cue_full set (security_invoker = true);
