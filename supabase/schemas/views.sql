@@ -1,4 +1,4 @@
-create view cue_full as
+create view cue_full_view with (security_invoker = true) as
 select
     c.id as cue_id,
     c.title as cue_title,
@@ -30,5 +30,3 @@ from cues c
 left join actions a on a.cue_id = c.id
 left join deterministic_actions da on da.action_id = a.id
 group by c.id;
-
-alter view cue_full set (security_invoker = true);

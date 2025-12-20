@@ -1,6 +1,4 @@
-create extension if not exists "pg_net" with schema "extensions";
-
-create or replace view "public"."cue_full" as  SELECT c.id AS cue_id,
+create or replace view "public"."cue_full_view" as  SELECT c.id AS cue_id,
     c.title AS cue_title,
     c.description AS cue_description,
     c.created_by AS cue_created_by,
